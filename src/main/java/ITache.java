@@ -1,9 +1,4 @@
-package domaine;
-
-import domaine.exception.TacheException;
-
 import java.util.Date;
-import java.util.List;
 
 public interface ITache {
 

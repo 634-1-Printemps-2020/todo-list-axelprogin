@@ -1,8 +1,3 @@
-package metier;
-
-import domaine.*;
-import domaine.exception.TacheException;
-
 import java.util.*;
 
 public class GestionTaches implements ITache {

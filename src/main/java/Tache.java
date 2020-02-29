@@ -1,6 +1,3 @@
-package domaine;
-
-import domaine.exception.TacheException;
 import java.util.Date;
 import java.util.Objects;
 
@@ -26,6 +23,14 @@ public class Tache {
     public void annulerTache(){
         status = Status.canceled;
         resolution = Resolution.ignored;
+    }
+
+    public Status getStatus(){
+        return this.status;
+    }
+
+    public Date getDate(){
+        return date;
     }
 
     public void replanifierTache(Date date){

@@ -1,9 +1,3 @@
-import domaine.Personne;
-import domaine.Resolution;
-import domaine.Status;
-import domaine.Tache;
-import domaine.exception.TacheException;
-import metier.GestionTaches;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -13,11 +7,9 @@ public class Main {
 
     public static void main(String[] args) throws ParseException, TacheException {
 
-        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
-
-
-        //Date
-        Date date1 = sdf.parse("1998-06-23");
+            SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+            //Date
+            Date date1 = sdf.parse("1998-06-23");
         Date date2 = sdf.parse("2019-07-26");
         Date date3 = sdf.parse("2001-09-11");
         Date date4 = sdf.parse("2011-03-11");
@@ -43,10 +35,6 @@ public class Main {
         gestionTaches.creerTache(personne4, "Entrainer anakin", date6, Status.open, Resolution.ignored);
         //gestionTaches.creerTache(personne3, "Quitter Corellia", date5, Status.open, Resolution.ignored);
 
-        gestionTaches.consulterTaches();
-        System.out.println("-------------");
-        gestionTaches.annulerTache(tache1, personne1);
-        gestionTaches.consulterTaches();
 
 
     }
